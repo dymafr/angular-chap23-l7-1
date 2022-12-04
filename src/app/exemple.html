@@ -1,0 +1,9 @@
+<mat-selection-list #options>
+  <mat-list-option *ngFor="let animal of animaux">
+    {{animal}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Options sélectionnées: {{ options.selectedOptions.selected.length }}
+</p>
